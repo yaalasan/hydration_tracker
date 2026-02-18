@@ -2,6 +2,12 @@ import streamlit as st
 from datetime import datetime, date, time
 import pytz
 
+st.markdown("""
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ff4da6">
+""", unsafe_allow_html=True)
+
+
 st.set_page_config(page_title="Bossan’s Hydration 💖", page_icon="🌸")
 
 # --- Cute but readable theme ---
@@ -95,3 +101,4 @@ elif st.session_state.glasses >= target:
     st.success("Hydration queen 👑 Mission complete!")
 
 st.markdown("<p style='text-align: center;'>Drink water and stay strong!🕷️ </p>", unsafe_allow_html=True)
+
